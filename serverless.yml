@@ -5,11 +5,11 @@ provider:
   name: aws
   runtime: nodejs12.x
   lambdaHashingVersion: 20201221
-  stage: dev
+  stage: prod
   region: us-west-2
 
 functions:
-  hello:
+  generateRandomNumber:
     handler: src/handler.generateRandomNumber
     timeout: 60 #seconds
     memorySize: 128 #mb
